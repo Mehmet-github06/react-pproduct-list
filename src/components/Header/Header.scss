@@ -1,0 +1,41 @@
+@import "../../scss/variables";
+
+header{
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+header h1{
+    color:$titleColor;
+    font-size: 3rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-family: $fontFamily;
+  
+}
+
+.buttons{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+button{
+    padding:1rem ;
+    border-radius: 1rem;
+    border: none;
+    font-family: $fontFamily;
+    letter-spacing: 2px;
+    font-size:800;
+    cursor: pointer;
+    
+    
+    &:hover{
+        background-color: $buttonColor;
+        color: white;
+        border: none;
+        transition: all .5s ease;
+    }
+
+}

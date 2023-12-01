@@ -1,0 +1,70 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.cards {
+  @include flex(space-evenly);
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+.card {
+  width: 350px;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  overflow: hidden;
+  &:hover .title {
+    transition: all 1s ease;
+    transform: translateX(0);
+    // text-align: center;
+    // font-size: 1.7rem;
+    // font-weight: bold;
+    // background-color: rgba(0, 0, 0, 0.7);
+    // padding: 20px 0px;
+  }
+}
+
+.image {
+  position: relative;
+  z-index: 1;
+
+  img {
+    border-radius: 10px;
+    height: 450px;
+    object-fit: cover;
+    opacity: 0.5;
+    width: 100%;
+
+    &:hover {
+      opacity: 1;
+      transition: all 0.4s ease;
+    }
+  }
+}
+
+.price {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 20px 0px;
+  transform: translateX(500px);
+  width: 100%;
+  //   z-index: 5;
+  //   overflow: hidden;
+}
