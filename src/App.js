@@ -1,7 +1,9 @@
-import Header from "./components/Header/Header";
+
 import Productcard from "./components/Productcard/Productcard";
 import { products } from "../src/helper/data";
 import "./App.scss";
+import Header from "./components/Header/Header";
+
 
 function App() {
   return (
