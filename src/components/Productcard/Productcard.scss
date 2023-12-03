@@ -16,11 +16,6 @@
   &:hover .title {
     transition: all 1s ease;
     transform: translateX(0);
-    // text-align: center;
-    // font-size: 1.7rem;
-    // font-weight: bold;
-    // background-color: rgba(0, 0, 0, 0.7);
-    // padding: 20px 0px;
   }
 }
 
@@ -63,7 +58,7 @@
   font-size: 1.7rem;
   font-weight: bold;
   padding: 20px 0px;
-  transform: translateX(500px);
+  transform: translateX(100%);
   width: 100%;
   //   z-index: 5;
   //   overflow: hidden;
